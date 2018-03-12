@@ -1,4 +1,4 @@
-// #1 Create an object called 'me' that has three keys, 'firstname' 'age' and 'state'. Assign the keys the appropriate values.
+``// #1 Create an object called 'me' that has three keys, 'firstname' 'age' and 'state'. Assign the keys the appropriate values.
 
 // CODE HERE
 var me = {
@@ -84,14 +84,15 @@ peopleIknow.filter(function(val,i,arr){
   if(arr[i].friend === true){
     trueFriends.push(val.name);
   }
+  return trueFriends;
 });
 
 // #10 create a function caled indexFinder and loop ove the randomNumbers array below and return a new array called 'indexes' with just their indexes. Be sure to invoke indexFinder.
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0]
 let indexes = [];
 
-function indexFinder(a){
-  for(var i = 0; i < a.length; i++) {
+function indexFinder(array){
+  for(var i = 0; i < array.length; i++) {
     indexes.push(i);
   }
 };
